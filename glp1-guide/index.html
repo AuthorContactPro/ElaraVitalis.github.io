@@ -100,6 +100,27 @@
             letter-spacing: -0.5px;
         }
 
+        /* Book Cover Container */
+        .book-cover-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .book-cover {
+            max-width: 350px;
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(71, 85, 105, 0.3);
+            margin: 0 auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .book-cover:hover {
+            transform: scale(1.02);
+        }
+
         .hero h2 {
             font-size: 22px;
             color: #64748b;
@@ -362,6 +383,8 @@
             font-weight: bold;
             box-shadow: 0 15px 35px rgba(71, 85, 105, 0.2);
             border: 4px solid #059669;
+            background-size: cover;
+            background-position: center;
         }
 
         .bio-text h3 {
@@ -441,6 +464,31 @@
             font-weight: 600;
         }
 
+        /* Policy Section */
+        .policy-section {
+            background: #f0fdf4;
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px 0;
+            text-align: center;
+            border: 3px solid #334155;
+        }
+
+        .policy-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #334155;
+        }
+
+        .policy-text {
+            color: #64748b;
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
         /* Footer CTA */
         .footer-cta {
             background: linear-gradient(135deg, #059669, #047857);
@@ -479,6 +527,40 @@
             .hero h1 {
                 font-size: 36px;
             }
+
+            .book-cover {
+                max-width: 280px;
+            }
+
+            .book-cover-container {
+                margin: 30px 0;
+            }
+
+            .policy-section {
+                padding: 30px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .book-cover {
+                max-width: 250px;
+            }
+
+            .book-cover-container {
+                margin: 25px 0;
+            }
+
+            .policy-section {
+                padding: 25px 15px;
+            }
+
+            .policy-title {
+                font-size: 24px;
+            }
+
+            .policy-text {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
@@ -494,7 +576,7 @@
                 <nav class="nav">
                     <a href="#whats-included">Resources</a>
                     <a href="#author-section">About</a>
-                    <a href="mailto:authorcontact.pro@gmail.com">Contact</a>
+                    <a href="mailto:authorcontact.pro+elaravitalis@gmail.com">Contact</a>
                 </nav>
             </div>
         </div>
@@ -504,6 +586,12 @@
     <section class="hero">
         <div class="container">
             <h1>Your Free GLP-1 Success Toolkit</h1>
+            
+            <!-- Book Cover Section -->
+            <div class="book-cover-container">
+                <img src="cover-gpl1.jpg" alt="The GLP-1 Weight Loss Success Guide - Elara Vitalis" class="book-cover">
+            </div>
+            
             <h2>Exclusive Resources for "The GLP-1 Weight Loss Success Guide" Readers</h2>
             
             <div class="hero-grid">
@@ -635,7 +723,7 @@
     <section class="author-section" id="author-section">
         <div class="container">
             <div class="author-content">
-                <div class="author-photo">
+                <div class="author-photo" style="background-image: url('Elara-photo.jpg'); background-size: cover; background-position: center;">
                     Elara Vitalis
                 </div>
                 <div class="bio-text">
@@ -650,6 +738,17 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Policy Section -->
+    <section class="policy-section">
+        <div class="container">
+            <h3 class="policy-title">🔒 Privacy-First Download Policy</h3>
+            <p class="policy-text">
+                We respect your privacy completely. No email address, personal information, or data collection required. 
+                Simply click download and receive your free toolkit instantly. Your information stays private, always.
+            </p>
         </div>
     </section>
 
